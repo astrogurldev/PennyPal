@@ -254,7 +254,7 @@ export default function App() {
                 value={authForm.password}
                 onChange={(e) => setAuthForm({...authForm, password: e.target.value})}
                 className="w-full p-5 bg-slate-50 rounded-2xl border-2 border-transparent focus:border-indigo-100 focus:bg-white outline-none font-bold transition-all text-slate-800"
-                placeholder="Kata sandi rahasia..."
+                placeholder="Kata sandi"
               />
             </div>
 
@@ -282,7 +282,7 @@ export default function App() {
               }}
               className="px-4 py-2 text-[11px] font-black text-indigo-500 uppercase tracking-widest hover:text-indigo-700 transition-colors cursor-pointer"
             >
-              {authMode === 'login' ? 'Belum punya akun? Daftar gratis!' : 'Sudah punya akun? Login di sini!'}
+              {authMode === 'login' ? 'Belum punya akun? Daftar di sini!' : 'Sudah punya akun? Login di sini!'}
             </button>
           </div>
         </Card>
