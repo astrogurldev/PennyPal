@@ -556,7 +556,7 @@ export default function App() {
                 </div>
                 <div className="relative">
                   <label className="text-[10px] font-black uppercase text-slate-700 ml-4 mb-1 block tracking-widest">Keterangan</label>
-                  <input type="text" placeholder="Pemasukan dari mana nih?" value={formData.note} onChange={(e) => setFormData({...formData, note: e.target.value})} className="w-full p-6 bg-white rounded-2xl border-4 border-slate-900 outline-none font-bold shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] text-slate-900" />
+                  <input type="text" placeholder=" " value={formData.note} onChange={(e) => setFormData({...formData, note: e.target.value})} className="w-full p-6 bg-white rounded-2xl border-4 border-slate-900 outline-none font-bold shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] text-slate-900" />
                 </div>
                 <button 
                   onClick={(e) => { e.preventDefault(); e.stopPropagation(); handleSaveTransaction(); }} 
